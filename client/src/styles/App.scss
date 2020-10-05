@@ -1,0 +1,18 @@
+/**
+ * You'll find here a set of variables to help you write the stylesheets you
+ * needs.
+ */
+
+/*** Pinpo Blog - Partials ***/
+
+@import './partials/borders';
+@import './partials/colors';
+@import './partials/shadows';
+@import './partials/spacings';
+@import './partials/typography';
+
+@import './partials/base';
+
+/*** Pinpo Blog - Components ***/
+
+@import './components/PinpoBlog';

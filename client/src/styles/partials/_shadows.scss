@@ -1,0 +1,13 @@
+/* Shadow Helpers */
+
+@mixin shadow-light() {
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,0.1);
+}
+
+@mixin shadow-medium() {
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.16);
+}
+
+@mixin shadow-heavy() {
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.18);
+}

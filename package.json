@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  },
+  "scripts": {
+    "setup-client": "cd client && yarn install",
+    "setup-server": "cd server && yarn install",
+    "setup": "concurrently --prefix '{time}' -c 'auto' 'yarn setup-client ' 'yarn setup-server'",
+    "start-client": "cd client && yarn start",
+    "start-server": "cd server && yarn start",
+    "start": "concurrently --prefix '{time}' -c 'auto' 'yarn start-client ' 'yarn start-server'"
+  }
+}

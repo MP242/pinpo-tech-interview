@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+/* Load environment */
+require("dotenv").config({ path: './default.env' })
+
+const app = require('../app')
+
+const port = process.env.PORT
+
+app.listen(port, function() {
+	console.log('Running on port ' + port + '...')
+})

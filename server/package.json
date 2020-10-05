@@ -1,0 +1,25 @@
+{
+  "name": "pinpo-tech-interview",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./app.js",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "jest"
+  },
+  "author": "Pinpo Team",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.16.2",
+    "express-rate-limit": "^6.7.0",
+    "mongoose": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

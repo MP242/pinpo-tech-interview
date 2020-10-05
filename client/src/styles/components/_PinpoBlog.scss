@@ -1,0 +1,19 @@
+.pinpo-blog {
+	padding: $lg-space $xxl-space;
+}
+
+.list-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px $silver solid;
+	margin-bottom: $md-space;
+
+	.main-title {
+		@include typo-heading($weight: $bold);
+	}
+
+	.logo {
+		width: 5rem;
+	}
+}

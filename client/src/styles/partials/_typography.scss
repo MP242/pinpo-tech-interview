@@ -1,0 +1,27 @@
+/*** Pinpo - Typography ***/
+
+@import url("https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+/* Font Weights */
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+@mixin typo-base-font() {
+	font-family: "Work Sans", Helvetica, Arial, sans-serif;
+}
+
+@mixin typo-heading($size: 4.8rem, $weight: $regular, $color: $nightBlack) {
+	font-family: "Caladea", "Work Sans", Helvetica, Arial, sans-serif;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}
+
+@mixin typo-default($size: 1.6rem, $weight: $regular, $color: $nightBlack) {
+	font-family: "Work Sans", Helvetica, Arial, sans-serif;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}

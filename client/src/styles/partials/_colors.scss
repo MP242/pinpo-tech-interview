@@ -1,0 +1,38 @@
+/*** Pinpo - Design Tokens ***/
+
+/** Primary palette **/
+
+/**
+ * Spicy Red
+ * Do not use for buttons.
+ * Always use a reduced opacity for backgrounds.
+ */
+$spicyRed: #e84746;
+
+/**
+ * Musta Yellow
+ * Always use a reduced opacity for backgrounds.
+ */
+$mustaYellow: #f2bd42;
+
+/**
+ * Night Black
+ * Primary text color.
+ * Can be sometimes used in footer or to highlight a product.
+ */
+$nightBlack: #030726;
+
+/** Secondary palette - Gray scale **/
+
+$coal: #333333;
+$nickel: #666666;
+$moon: #999999;
+$silver: #cccccc;
+$snow: #ffffff;
+
+/** Alert palette **/
+
+$failure: #e74c3c;
+$warning: #f1c40f;
+$success: #2ecc71;
+$info: #379cf9;
