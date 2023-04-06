@@ -68,9 +68,6 @@ function Edit() {
   }
 
   const handleCancel = () => {
-    // setTitle('');
-    // setContent('');
-    // setAuthor('');
     navigate(`/post/${id}`);
   }
 
