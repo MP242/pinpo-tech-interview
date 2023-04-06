@@ -1,16 +1,18 @@
 import React from 'react';
+import Home from './styles/components/Home/Home';
+import { Routes, Route } from 'react-router-dom';
+import Post from './styles/components/Post/Post';
+import Edit from './styles/components/Edit/Edit';
+import NewPost from './styles/components/NewPost/NewPost';
 
 function PinpoBlog() {
   return (
-    <div className='pinpo-blog'>
-      <header className='list-header'>
-        <h1 className='main-title'>Pinpo Blog</h1>
-        <img className='logo' src='./logo.png' alt='Logo Pinpo' />
-      </header>
-      <section className='instructions'>
-        <p>This is a blank page. The keyboard is yours.</p>
-      </section>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/post/:id" element={<Post />}/>
+      <Route path="/post/edit/:id" element={<Edit />}/>
+      <Route path="/post/new" element={<NewPost />}/>
+    </Routes>
   );
 }
 

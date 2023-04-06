@@ -1,0 +1,42 @@
+.titlePost{
+	display : flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .a {
+        text-decoration: none !important;
+        color: #141414 !important;
+    }
+}
+
+.headerPost{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .headerTitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .titleOne{
+            // font-size: 1.5rem;
+            // font-weight: 600;
+            color: #141414;
+            margin-right: 5px;
+        }
+        .titleTwo{
+            // font-size: 1.5rem;
+            // font-weight: 600;
+            color: #9C9C9C;
+            margin: 5px;
+        }
+    }
+
+    .newPost{
+        color: #F2BD42 ;
+    }
+}

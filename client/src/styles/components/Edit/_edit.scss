@@ -1,0 +1,59 @@
+@import '../../partials/typography';
+
+.formButtons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.titleInput{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#content{
+    height: 200px;
+}
+
+input,textarea {
+    @include typo-base-font();
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: rgb(60, 66, 87);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px,
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+      rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 4px 8px;
+    min-height: 38px;
+    vertical-align: middle;
+    transition: background-color 0.24s, box-shadow 0.24s;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.24s, 0.24s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    margin: 5px;
+}
+  
+input:focus, textarea::focus {
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(58 151 212 / 36%) 0px 0px 0px 4px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+input::placeholder {
+    @include typo-base-font();
+    height: fit-content;
+}
+
+textarea::placeholder {
+    @include typo-base-font();
+}
