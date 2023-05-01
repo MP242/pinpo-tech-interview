@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './_NewPost.scss';
-import { Link } from "react-router-dom";
 
 function NewPost() {
   const [title, setTitle] = useState('');
@@ -47,13 +46,7 @@ function NewPost() {
   }
 
   return (
-    <div className='pinpo-blog'>
-      <header className='list-header'>
-        <h1 className='main-title'>Nouvel article</h1>
-        <Link to={`/`}>
-          <img className='logo' src='../../../logo.png' alt='Logo Pinpo' />
-        </Link>        
-      </header>
+
       <section className='instructions'>
         <form onSubmit={handleSubmit}>
           <div className='titleInput'>
@@ -95,7 +88,6 @@ function NewPost() {
         </form>
         {success && <p>Success !</p>}
       </section>
-    </div>
   )
 }
 

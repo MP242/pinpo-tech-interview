@@ -72,13 +72,13 @@ function Edit() {
   }
 
   return (
-    <div className='pinpo-blog'>
-      <header className='list-header'>
-        <h1 className='main-title'>Nouvel article</h1>
-        <Link to={`/`}>
-          <img className='logo' src='../../../logo.png' alt='Logo Pinpo' />
-        </Link>        
-      </header>
+    // <div className='pinpo-blog'>
+    //   <header className='list-header'>
+    //     <h1 className='main-title'>Nouvel article</h1>
+    //     <Link to={`/`}>
+    //       <img className='logo' src='../../../logo.png' alt='Logo Pinpo' />
+    //     </Link>        
+    //   </header>
       <section className='instructions'>
         <form onSubmit={handleSubmit}>
           <div className='titleInput'>
@@ -120,7 +120,7 @@ function Edit() {
         </form>
         {success && <p>Success !</p>}
       </section>
-    </div>
+    // </div>
   )
 }
 
