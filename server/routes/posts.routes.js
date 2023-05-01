@@ -41,4 +41,15 @@ router.route("/:id")
 		}
 	})
 
+router.route("/home/:number")
+	.get(async (request, response) => {
+		try {
+			const { number } = request.params
+			const posts = await Post.getPostsHome(number)
+			response.json(posts)
+		} catch (error) {
+			response.status(500).json({ error: error.toString() })
+		}
+	})
+
 module.exports = router

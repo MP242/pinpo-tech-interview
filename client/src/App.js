@@ -1,17 +1,18 @@
 import React from 'react';
-import Home from './styles/components/Home/Home';
+import Home from './components/Home/Home';
 import { Routes, Route } from 'react-router-dom';
-import Post from './styles/components/Post/Post';
-import Edit from './styles/components/Edit/Edit';
-import NewPost from './styles/components/NewPost/NewPost';
+import Post from './components/Post/Post';
+import Edit from './components/Edit/Edit';
+import NewPost from './components/NewPost/NewPost';
+import Layout from './components/Layout/Layout';
 
 function PinpoBlog() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Layout pageTitle="Pinpo Blog" children={<Home />} />} />
       <Route path="/post/:id" element={<Post />}/>
-      <Route path="/post/edit/:id" element={<Edit />}/>
-      <Route path="/post/new" element={<NewPost />}/>
+      <Route path="/post/edit/:id" element={<Layout pageTitle="Modifier l'article" children={<Edit />} />} />
+      <Route path="/post/new" element={<Layout pageTitle="Nouvel article" children={<NewPost />} />} />
     </Routes>
   );
 }
